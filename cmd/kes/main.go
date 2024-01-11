@@ -43,6 +43,7 @@ Commands:
 
     migrate                  Migrate KMS data.
     update                   Update KES binary.
+    init                     Init with prompts 
 
 Options:
     -v, --version            Print version information.
@@ -71,6 +72,7 @@ func main() {
 
 		"migrate": migrateCmd,
 		"update":  updateCmd,
+		"init":    initCmd,
 	}
 
 	if len(os.Args) < 2 {
